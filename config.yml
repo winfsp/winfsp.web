@@ -1,0 +1,5 @@
+baseURL: https://winfsp.github.io
+title: WinFsp
+
+disablePathToLower: false
+disableKinds: ["taxonomy", "taxonomyTerm", "RSS"]

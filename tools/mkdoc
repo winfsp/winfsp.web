@@ -1,0 +1,38 @@
+#!/bin/bash
+
+set -e
+
+copy_content()
+{
+    local src="$1"
+    local bnm=${src##*/}
+    local nam=${bnm%.*}
+    local tit=${nam//-/ }
+    local dir=${src%.*}
+    local dst="$2"
+    local cmd="$3"
+
+    cat <<EOT | cat - "$src" | eval "$3" > "$dst"/"$bnm"
+---
+title: '$tit'
+---
+EOT
+
+    if [ -d "$dir" ]; then
+        cp -R "$dir" "$dst"
+    fi
+}
+
+copy_asciidoc()
+{
+    copy_content "$1" "$2" 'sed "s/$nam\///g"'
+}
+
+cd $(dirname "$0")/..
+
+rm -rf content/doc
+mkdir -p content/doc
+
+for f in ext/winfsp/doc/*.asciidoc; do
+    copy_asciidoc "$f" content/doc
+done
