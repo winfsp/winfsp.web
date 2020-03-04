@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+
+    <link rel="stylesheet" href="{{ `css/primer.css` | relURL }}" />
+    <link rel="stylesheet" href="{{ `css/site.css` | relURL }}" />
+  </head>
+  <body class="bg-gray">
+    <div id="container" class="container-lg clearfix">
+
+      <div id="side" class="col-3 float-left position-sticky top-0">
+        <div class="bg-gray-dark text-gray-light" style="min-height:100vh">
+          <h1>{{ .Site.Title }}</h1>
+          <nav class="SideNav border">
+            {{- $RelPermalink := .RelPermalink -}}
+            {{ range .Site.Menus.main -}}
+            <a class="SideNav-item" href="{{ .URL }}"
+                {{- if or (eq $RelPermalink .URL) (and (ne .URL "/") (hasPrefix $RelPermalink .URL)) -}}
+                  aria-current="page"
+                {{- end }}>
+              {{- .Name -}}
+            </a>
+            {{- end }}
+          </nav>
+        </div>
+      </div>
+
+      <div id="main" class="col-9 float-left auto-color-scheme">
+        <div class="markdown-body bg-white text-gray-dark" style="min-height:100vh">
+          {{- block "main" . }}{{ end -}}
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
