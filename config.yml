@@ -20,15 +20,12 @@ menu:
   - name: Download
     url: /rel/
     weight: 20
-  - name: API Reference
-    url: /apiref/
-    weight: 30
   - name: Documentation
     url: /doc/
-    weight: 40
+    weight: 30
   - name: Source
     url: /src/
-    weight: 50
+    weight: 40
   - name: Blog
     url: /blog/
-    weight: 60
+    weight: 50
