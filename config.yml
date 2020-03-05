@@ -18,14 +18,15 @@ menu:
     url: /
     weight: 10
   - name: Download
-    url: /rel/
+    url: /rel
     weight: 20
   - name: Documentation
-    url: /doc/
+    url: /doc
+    post: pages
     weight: 30
   - name: Source
-    url: /src/
+    url: /src
     weight: 40
   - name: Blog
-    url: /blog/
+    url: /blog
     weight: 50
