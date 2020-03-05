@@ -1,56 +1,56 @@
 @media (prefers-color-scheme: dark) {
-  .auto-color-scheme .bg-white      { background-color: #1b1f23 !important; }
-  .auto-color-scheme .bg-blue       { background-color: #f1f8ff !important; }
-  .auto-color-scheme .bg-blue-light { background-color: #0366d6 !important; }
-  .auto-color-scheme .bg-gray-dark  { background-color: #959da5 !important; }
-  .auto-color-scheme .bg-gray       { background-color: #6a737d !important; }
-  .auto-color-scheme .bg-gray-light { background-color: #24292e !important; }
-  .auto-color-scheme .bg-green      { background-color: #dcffe4 !important; }
-  .auto-color-scheme .bg-green-light     { background-color: #28a745 !important; }
-  .auto-color-scheme .bg-red        { background-color: #ffdce0 !important; }
-  .auto-color-scheme .bg-red-light  { background-color: #d73a49 !important; }
-  .auto-color-scheme .bg-yellow     { background-color: #ffd33d !important; }
-  .auto-color-scheme .bg-yellow-light     { background-color: #dbab09 !important; }
-  .auto-color-scheme .bg-yellow-dark      { background-color: #fff5b1 !important; }
-  .auto-color-scheme .bg-purple     { background-color: #f5f0ff !important; }
-  .auto-color-scheme .bg-purple-light     { background-color: #6f42c1 !important; }
-  .auto-color-scheme .bg-pink { background-color: #ea4aaa !important; }
+  .bg-white      { background-color: #1b1f23 !important; }
+  .bg-blue       { background-color: #f1f8ff !important; }
+  .bg-blue-light { background-color: #0366d6 !important; }
+  .bg-gray-dark  { background-color: #959da5 !important; }
+  .bg-gray       { background-color: #6a737d !important; }
+  .bg-gray-light { background-color: #24292e !important; }
+  .bg-green      { background-color: #dcffe4 !important; }
+  .bg-green-light     { background-color: #28a745 !important; }
+  .bg-red        { background-color: #ffdce0 !important; }
+  .bg-red-light  { background-color: #d73a49 !important; }
+  .bg-yellow     { background-color: #ffd33d !important; }
+  .bg-yellow-light     { background-color: #dbab09 !important; }
+  .bg-yellow-dark      { background-color: #fff5b1 !important; }
+  .bg-purple     { background-color: #f5f0ff !important; }
+  .bg-purple-light     { background-color: #6f42c1 !important; }
+  .bg-pink { background-color: #ea4aaa !important; }
 
-  .auto-color-scheme .text-blue          { color: #f1f8ff !important; }
-  .auto-color-scheme .text-red           { color: #ffdce0 !important; }
-  .auto-color-scheme .text-gray-light    { color: #24292e !important; }
-  .auto-color-scheme .text-gray          { color: #6a737d !important; }
-  .auto-color-scheme .text-gray-dark     { color: #959da5 !important; }
-  .auto-color-scheme .text-green         { color: #dcffe4 !important; }
-  .auto-color-scheme .text-yellow        { color:  #fff5b1 !important; }
-  .auto-color-scheme .text-orange        { color: #e36209 !important; }
-  .auto-color-scheme .text-orange-light        { color: #a04100 !important; }
-  .auto-color-scheme .text-purple        { color: #f5f0ff !important; }
-  .auto-color-scheme .text-pink { color: #ea4aaa !important; }
-  .auto-color-scheme .text-white         { color: #1b1f23 !important; }
+  .text-blue          { color: #f1f8ff !important; }
+  .text-red           { color: #ffdce0 !important; }
+  .text-gray-light    { color: #24292e !important; }
+  .text-gray          { color: #6a737d !important; }
+  .text-gray-dark     { color: #959da5 !important; }
+  .text-green         { color: #dcffe4 !important; }
+  .text-yellow        { color:  #fff5b1 !important; }
+  .text-orange        { color: #e36209 !important; }
+  .text-orange-light        { color: #a04100 !important; }
+  .text-purple        { color: #f5f0ff !important; }
+  .text-pink { color: #ea4aaa !important; }
+  .text-white         { color: #1b1f23 !important; }
 
-  .auto-color-scheme .link-gray {
+  .link-gray {
     color: #6a737d !important;
   }
-  .auto-color-scheme .link-gray:hover {
+  .link-gray:hover {
     color: #f1f8ff !important;
   }
 
-  .auto-color-scheme .link-gray-dark {
+  .link-gray-dark {
     color: #959da5 !important;
   }
-  .auto-color-scheme .link-gray-dark:hover {
+  .link-gray-dark:hover {
     color: #f1f8ff !important;
   }
 
-  .auto-color-scheme .link-hover-blue:hover {
+  .link-hover-blue:hover {
     color: #f1f8ff !important;
   }
 
-  .auto-color-scheme .muted-link {
+  .muted-link {
     color: #6a737d !important;
   }
-  .auto-color-scheme .muted-link:hover {
+  .muted-link:hover {
     color: #f1f8ff !important;
     text-decoration: none;
   }

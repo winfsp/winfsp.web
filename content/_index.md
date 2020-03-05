@@ -2,4 +2,4 @@
 title: Windows File System Proxy
 ---
 
-This is my home page content.
+This is the main/home page content.

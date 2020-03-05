@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="{{ `css/primer.css` | relURL }}" />
     <link rel="stylesheet" href="{{ `css/site.css` | relURL }}" />
   </head>
-  <body class="bg-gray">
+  <body class="bg-white text-gray-dark">
     <div id="container" class="container-lg clearfix">
 
       <div id="side" class="col-3 float-left position-sticky top-0">
-        <div class="bg-gray-dark text-gray-light" style="min-height:100vh">
+        <div class="p-3" style="min-height:100vh">
+          {{ if fileExists .Site.Params.Logo -}}<img src="{{ .Site.Params.Logo | relURL }}" class="width-fit" />{{- end }}
           <h1>{{ .Site.Title }}</h1>
           <nav class="SideNav border">
             {{- $RelPermalink := .RelPermalink -}}
@@ -29,8 +30,8 @@
         </div>
       </div>
 
-      <div id="main" class="col-9 float-left auto-color-scheme">
-        <div class="markdown-body bg-white text-gray-dark" style="min-height:100vh">
+      <div id="main" class="col-9 float-left">
+        <div class="p-3 markdown-body" style="min-height:100vh">
           {{- block "main" . }}{{ end -}}
         </div>
       </div>
