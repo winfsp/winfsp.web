@@ -12,8 +12,6 @@ copy_content()
     local dst="$2"
     local cmd="$3"
 
-    rm -rf "$dst"/"$bnm" "$dst"/"$nam"
-
     cat <<EOT | cat - "$src" | eval "$3" > "$dst"/"$bnm"
 ---
 title: '$tit'
@@ -32,6 +30,7 @@ copy_asciidoc()
 
 cd $(dirname "$0")/..
 
+rm -rf content/doc
 mkdir -p content/doc
 
 cat <<EOT | cat - ext/winfsp/doc/Home.md | sed -e '/^# .*$/d' -e '/^\[\[[^]]*.png\]\]$/d' -e 's/\[\[\([^]]*\)\|\([^]]*\)\]\]/[\1](\2)/g' > content/doc/_index.md
