@@ -4,3 +4,6 @@
 [submodule "ext/primer-css"]
 	path = ext/primer-css
 	url = https://github.com/primer/css.git
+[submodule "public"]
+	path = public
+	url = https://github.com/winfsp/winfsp.github.io.git
