@@ -1,0 +1,6 @@
+[submodule "ext/winfsp"]
+	path = ext/winfsp
+	url = https://github.com/billziss-gh/winfsp.git
+[submodule "ext/primer-css"]
+	path = ext/primer-css
+	url = https://github.com/primer/css.git
