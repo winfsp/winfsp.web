@@ -14,7 +14,9 @@
 
       <div id="side" class="col-3 float-left">
         <div class="p-3" style="min-height:100vh">
-          {{ if fileExists .Site.Params.Logo -}}<img src="{{ .Site.Params.Logo | relURL }}" class="mb-3 width-fit" />{{- end }}
+          {{ if fileExists .Site.Params.Logo -}}
+            <img src="{{ .Site.Params.Logo | relURL }}" class="mb-3 width-fit auto-invert" />
+          {{- end }}
           <h1 class="f1-light text-uppercase ml-2">{{ .Site.Title }}</h1>
           <nav class="SideNav border">
             {{- $RelPermalink := .RelPermalink -}}

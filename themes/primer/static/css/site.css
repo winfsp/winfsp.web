@@ -1,1 +1,6 @@
-@import url(primer-dark.css) (prefers-color-scheme: dark)
+@import url(primer-dark.css) (prefers-color-scheme: dark);
+
+@media (prefers-color-scheme: dark) {
+  .auto-invert  { filter: invert(75%); }
+  img           { filter: brightness(75%); }
+}
