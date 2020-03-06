@@ -17,7 +17,7 @@
           {{ if fileExists .Site.Params.Logo -}}
             <img src="{{ .Site.Params.Logo | relURL }}" class="mb-3 width-fit auto-invert" />
           {{- end }}
-          <h1 class="f1-light text-uppercase ml-2">{{ .Site.Title }}</h1>
+          <h1 class="f1-light text-uppercase text-center mb-3">{{ .Site.Title }}</h1>
           <nav class="SideNav border">
             {{- $RelPermalink := .RelPermalink -}}
             {{ range .Site.Menus.main -}}
