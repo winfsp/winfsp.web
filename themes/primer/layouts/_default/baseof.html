@@ -12,7 +12,18 @@
   <body class="bg-white text-gray-dark">
     <div id="container" class="container-lg clearfix">
 
-      <div id="side" class="col-3 float-left">
+      <details class="dropdown details-reset details-overlay d-block d-md-none position-fixed top-0 right-0 mt-3 mr-3">
+        <summary class="btn-octicon" aria-haspopup="true">
+          <img src="{{ `svg/three-bars.svg` | relURL }}" class="p-2 auto-invert" style="background-color:white;" />
+        </summary>
+        <ul class="dropdown-menu dropdown-menu-w">
+          {{ range .Site.Menus.main -}}
+            <li><a class="dropdown-item" href="{{ .URL }}">{{- .Name -}}</a></li>
+          {{- end }}
+        </ul>
+      </details>
+
+      <div id="side" class="col-md-3 float-left d-none d-md-block">
         <div class="p-3" style="min-height:100vh">
           {{ if fileExists .Site.Params.Logo -}}
             <img src="{{ .Site.Params.Logo | relURL }}" class="mb-3 width-fit auto-invert" />
@@ -39,7 +50,7 @@
         </div>
       </div>
 
-      <div id="main" class="col-9 float-left">
+      <div id="main" class="col-12 col-md-9 float-left">
         <div class="p-3 markdown-body" style="min-height:100vh">
           {{- block "main" . }}{{ end -}}
         </div>
