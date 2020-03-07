@@ -9,6 +9,11 @@ disablePathToLower: true
 disableKinds: ["taxonomy", "taxonomyTerm", "RSS", "404"]
 pygmentsUseClasses: true
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   logo: logo.png
   description: Windows File System Proxy - FUSE for Windows

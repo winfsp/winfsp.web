@@ -1,0 +1,8 @@
+{{- $rel := getJSON "https://api.github.com/repos/" (.Get 0) "/releases/latest" -}}
+{{- $end := .Get 1 -}}
+{{- range (index $rel "assets") -}}
+  {{- $url := index . "browser_download_url" -}}
+  {{- if strings.HasSuffix $url $end -}}
+    {{- $url -}}
+  {{- end -}}
+{{- end -}}

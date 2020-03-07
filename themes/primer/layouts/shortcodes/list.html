@@ -1,7 +1,0 @@
-{{ with .Page }}
-  <ul>
-      {{ range .Pages }}
-      <li><a href="{{ .URL | relURL }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
-{{ end }}

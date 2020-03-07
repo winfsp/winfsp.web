@@ -1,0 +1,4 @@
+{{- $rel := getJSON "https://api.github.com/repos/" (.Get 0) "/releases/latest" -}}
+{{- $end := .Get 1 -}}
+{{- $tag := index $rel "tag_name" -}}
+{{- print `https://github.com/` (.Get 0) `/blob/` $tag (.Get 1) -}}
