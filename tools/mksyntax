@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+cd $(dirname "$0")/..
+
+tools/mksyntax.py < ext/github-syntax-theme-generator/lib/themes/light.json > themes/primer/static/css/syntax.css
+tools/mksyntax.py < ext/github-syntax-theme-generator/lib/themes/dark.json > themes/primer/static/css/syntax-dark.css

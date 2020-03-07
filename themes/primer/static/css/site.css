@@ -1,4 +1,6 @@
 @import url(primer-dark.css) (prefers-color-scheme: dark);
+@import url(syntax.css);
+@import url(syntax-dark.css) (prefers-color-scheme: dark);
 
 @media (prefers-color-scheme: dark) {
   .auto-invert  { filter: invert(75%); }

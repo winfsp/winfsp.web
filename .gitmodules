@@ -7,3 +7,6 @@
 [submodule "public"]
 	path = public
 	url = https://github.com/winfsp/winfsp.github.io.git
+[submodule "ext/github-syntax-theme-generator"]
+	path = ext/github-syntax-theme-generator
+	url = https://github.com/primer/github-syntax-theme-generator.git
