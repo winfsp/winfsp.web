@@ -2,6 +2,7 @@
 title: 'WinFsp Kernel Mode File Systems'
 ---
 = Developing File Systems in Kernel Mode
+:source-highlighter: pygments
 
 Since release 2019.3 WinFsp supports development of file systems in kernel mode. Such file systems are implemented as kernel drivers that use WinFsp as the primary FSD (File System Driver) as well as the software library that they interface with to retrieve and service file system requests. This document discusses how to write such file systems.
 

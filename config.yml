@@ -7,6 +7,7 @@ theme: primer
 disableHugoGeneratorInject: true
 disablePathToLower: true
 disableKinds: ["taxonomy", "taxonomyTerm", "RSS", "404"]
+pygmentsUseClasses: true
 
 params:
   logo: logo.png

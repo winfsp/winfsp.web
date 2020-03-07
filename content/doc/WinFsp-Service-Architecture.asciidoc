@@ -2,6 +2,7 @@
 title: 'WinFsp Service Architecture'
 ---
 = WinFsp Service Architecture
+:source-highlighter: pygments
 
 This document discusses an architecture for writing user mode file systems as Windows services.
 

@@ -2,6 +2,7 @@
 title: 'SSHFS Port Case Study'
 ---
 = SSHFS Port Case Study
+:source-highlighter: pygments
 
 This document is a case study in porting SSHFS to Windows and WinFsp. At the time that the document was started WinFsp had a native API, but no FUSE compatible API. The main purpose of the case study was to develop a FUSE compatible API for WinFsp.
 

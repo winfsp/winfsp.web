@@ -2,6 +2,7 @@
 title: 'WinFsp Testing'
 ---
 = WinFsp Testing Strategy
+:source-highlighter: pygments
 
 WinFsp maintains quality through rigorous testing under a variety of scenarios. This document discusses its testing strategy.
 

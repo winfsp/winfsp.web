@@ -2,6 +2,7 @@
 title: 'Frequently Asked Questions'
 ---
 = Frequently Asked Questions
+:source-highlighter: pygments
 
 == General
 

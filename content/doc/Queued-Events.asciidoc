@@ -2,6 +2,7 @@
 title: 'Queued Events'
 ---
 = Queued Events - Windows kernel events with IOCP scheduling characteristics
+:source-highlighter: pygments
 
 In this article I am discussing _Queued Events_. _Queued Events_ are a Windows kernel synchronization mechanism that I invented for https://github.com/billziss-gh/winfsp[WinFsp - FUSE for Windows]. _Queued Events_ behave like kernel Synchronization Events (i.e. Win32 auto-reset events), but provide scheduling characteristics similar to those of I/O Completion Ports.
 

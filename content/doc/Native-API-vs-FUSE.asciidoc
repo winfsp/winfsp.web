@@ -2,6 +2,7 @@
 title: 'Native API vs FUSE'
 ---
 = Native API vs FUSE
+:source-highlighter: pygments
 
 This document compares the "native" WinFsp API to the FUSE API and provides a rationale for the existence of both within WinFsp.
 

@@ -2,6 +2,7 @@
 title: 'WinFsp Tutorial'
 ---
 = Tutorial: creating a simple file system
+:source-highlighter: pygments
 :toc: preamble
 :toc-title:
 ifdef::env-github[]

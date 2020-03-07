@@ -2,6 +2,7 @@
 title: 'WinFsp as an IPC Mechanism'
 ---
 = WinFsp as an IPC Mechanism
+:source-highlighter: pygments
 
 WinFsp enables the creation of user mode file systems for Windows. At its core WinFsp is also an Inter-Process Communication (IPC) mechanism that uses the familiar file system interface for communication. This document discusses WinFsp from that viewpoint.
 

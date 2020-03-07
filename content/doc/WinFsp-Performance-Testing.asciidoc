@@ -2,6 +2,7 @@
 title: 'WinFsp Performance Testing'
 ---
 = Performance Testing
+:source-highlighter: pygments
 :caption:
 
 This document discusses performance testing for WinFsp. The goal of this performance testing is to discover optimization opportunities for WinFsp and compare its performance to that of NTFS and Dokany.

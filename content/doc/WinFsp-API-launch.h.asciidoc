@@ -2,6 +2,7 @@
 title: 'WinFsp API launch.h'
 ---
 = winfsp/launch.h
+:source-highlighter: pygments
 :author: (C) 2015-2018 Bill Zissimopoulos
 :toc: preamble
 :toc-title:

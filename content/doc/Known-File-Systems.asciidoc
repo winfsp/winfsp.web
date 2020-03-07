@@ -2,6 +2,7 @@
 title: 'Known File Systems'
 ---
 = Known File Systems and File System Libraries
+:source-highlighter: pygments
 
 This document contains a list of known file systems and file system libraries that run on WinFsp. Please contact the WinFsp project to have your file system solution added to this list.
 

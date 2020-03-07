@@ -25,7 +25,8 @@ EOT
 
 copy_asciidoc()
 {
-    copy_content "$1" "$2" 'sed "s/$nam\///g"'
+    local nl=\\$'\n'
+    copy_content "$1" "$2" 'sed -e "s/$nam\///g" -e "1,/^= .*$/s/^\\(= .*\\)$/\\1$nl:source-highlighter: pygments/"'
 }
 
 cd $(dirname "$0")/..

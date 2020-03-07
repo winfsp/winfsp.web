@@ -2,6 +2,7 @@
 title: 'NTFS Compatibility'
 ---
 = NTFS Compatibility
+:source-highlighter: pygments
 
 WinFsp enables the creation of user mode file systems that behave similar to NTFS or FAT. Generic Windows applications that access files on a WinFsp file system cannot and should not be able to determine that it is not a native Windows file system. However specialized applications that access NTFS or FAT specific extensions (such as Defrag) will not work properly on WinFsp file systems.
 
