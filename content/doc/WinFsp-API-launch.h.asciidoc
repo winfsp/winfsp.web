@@ -1,5 +1,5 @@
 ---
-title: 'WinFsp API launch.h'
+title: 'WinFsp API: launch.h'
 ---
 = winfsp/launch.h
 :source-highlighter: pygments

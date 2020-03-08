@@ -26,6 +26,10 @@ menu:
   - name: Download
     url: /rel
     weight: 20
+  - name: API Reference
+    url: /doc/WinFsp-API-winfsp.h
+    post: disable-current
+    weight: 25
   - name: Documentation
     url: /doc
     post: pages

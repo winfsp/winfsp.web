@@ -12,6 +12,8 @@ copy_content()
     local dst="$2"
     local cmd="$3"
 
+    tit="${tit/WinFsp API /WinFsp API: }"
+
     cat <<EOT | cat - "$src" | eval "$3" > "$dst"/"$bnm"
 ---
 title: '$tit'
