@@ -33,6 +33,3 @@ menu:
   - name: Source
     url: /src
     weight: 40
-  - name: Blog
-    url: /blog
-    weight: 50
