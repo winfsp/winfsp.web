@@ -1,5 +1,5 @@
 ---
-title: "WinFsp Source Code"
+title: "Source Code"
 ---
 
 WinFsp is an open-source project hosted at GitHub. You can access and download its source code from the location below.
