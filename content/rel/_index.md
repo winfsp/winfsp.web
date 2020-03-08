@@ -2,21 +2,21 @@
 title: "Download"
 ---
 
-WinFsp is released in the form of an MSI installer that includes a signed driver and all files necessary to run and develop user mode file system on Windows. The installer supports Windows native, FUSE, .NET and Cygwin file systems out of the box. Download the latest version here.
+WinFsp is released in the form of an MSI installer that includes a signed driver and all files necessary to run and develop user mode file systems on Windows. The installer supports Windows native, FUSE, .NET and Cygwin file systems out of the box. Download the latest version here.
 
 <center class="my-5">
-<a class="btn btn-primary" style="width:240px;" href="{{< github-release `billziss-gh/winfsp` `.msi` >}}" role="button">Download WinFsp Installer</a><br/>
-<a class="text-small" href="https://github.com/billziss-gh/winfsp">Repository</a> &middot; <a class="text-small" href="{{< github-blob `billziss-gh/winfsp` `/Changelog.asciidoc` >}}">Changelog</a><br/>
+<a class="btn btn-primary" style="width:240px;" href="{{< github-latest-asset `billziss-gh/winfsp` `.msi` >}}" role="button">Download WinFsp Installer</a><br/>
+<a class="text-small" href="https://github.com/billziss-gh/winfsp">Repository</a> &middot; <a class="text-small" href="{{< github-latest-blob `billziss-gh/winfsp` `/Changelog.asciidoc` >}}">Changelog</a><br/>
 <br/>
 <br/>
 <b>Additional Downloads</b><br/>
 <span class="text-small">WinFsp installation required</span><br/>
 <br/>
-<a class="btn btn-outline mb-1" style="width:240px;" href="{{< github-release `billziss-gh/sshfs-win` `-x64.msi` >}}" role="button">SSHFS-Win (x64)</a><br/>
-<a class="btn btn-outline" style="width:240px;" href="{{< github-release `billziss-gh/sshfs-win` `-x86.msi` >}}" role="button">SSHFS-Win (x86)</a><br/>
+<a class="btn btn-outline mb-1" style="width:240px;" href="{{< github-latest-asset `billziss-gh/sshfs-win` `-x64.msi` >}}" role="button">SSHFS-Win (x64)</a><br/>
+<a class="btn btn-outline" style="width:240px;" href="{{< github-latest-asset `billziss-gh/sshfs-win` `-x86.msi` >}}" role="button">SSHFS-Win (x86)</a><br/>
 <a class="text-small" href="https://github.com/billziss-gh/sshfs-win">Repository</a><br/>
 <br/>
-<a class="btn btn-outline" style="width:240px;" href="{{< github-release `billziss-gh/nfs-win` `.msi` >}}" role="button">NFS-Win (x86)</a><br/>
+<a class="btn btn-outline" style="width:240px;" href="{{< github-latest-asset `billziss-gh/nfs-win` `.msi` >}}" role="button">NFS-Win (x86)</a><br/>
 <a class="text-small" href="https://github.com/billziss-gh/nfs-win">Repository</a>
 </center>
 
