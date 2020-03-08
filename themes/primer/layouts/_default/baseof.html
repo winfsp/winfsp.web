@@ -43,7 +43,7 @@
             {{- $RelPermalink := .RelPermalink -}}
             {{ range .Site.Menus.main -}}
               {{- $current := or (eq $RelPermalink .URL) (and (ne .URL "/") (hasPrefix $RelPermalink .URL)) -}}
-              <a class="SideNav-item" href="{{ .URL }}" {{ if and $current (ne .Post "disable-current") }}aria-current="page"{{ end }}>
+              <a class="SideNav-item" href="{{ .URL }}" {{ if $current }}aria-current="page"{{ end }}>
                 {{- .Name -}}
               </a>
               {{if and $current (eq .Post "pages") -}}

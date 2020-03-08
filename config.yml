@@ -27,8 +27,7 @@ menu:
     url: /rel
     weight: 20
   - name: API Reference
-    url: /doc/WinFsp-API-winfsp.h
-    post: disable-current
+    url: /apiref
     weight: 25
   - name: Documentation
     url: /doc
