@@ -12,11 +12,11 @@ WinFsp is released in the form of an MSI installer that includes a signed driver
 <b>Additional Downloads</b><br/>
 <span class="text-small">WinFsp installation required</span><br/>
 <br/>
-<a class="btn btn-outline mb-1" style="width:240px;" href="{{< github-latest-asset `billziss-gh/sshfs-win` `-x64.msi` >}}" role="button">SSHFS-Win (x64)</a><br/>
-<a class="btn btn-outline" style="width:240px;" href="{{< github-latest-asset `billziss-gh/sshfs-win` `-x86.msi` >}}" role="button">SSHFS-Win (x86)</a><br/>
+<a class="btn mb-1" style="width:240px;" href="{{< github-latest-asset `billziss-gh/sshfs-win` `-x64.msi` >}}" role="button">SSHFS-Win (x64)</a><br/>
+<a class="btn" style="width:240px;" href="{{< github-latest-asset `billziss-gh/sshfs-win` `-x86.msi` >}}" role="button">SSHFS-Win (x86)</a><br/>
 <a class="text-small" href="https://github.com/billziss-gh/sshfs-win">Repository</a><br/>
 <br/>
-<a class="btn btn-outline" style="width:240px;" href="{{< github-latest-asset `billziss-gh/nfs-win` `.msi` >}}" role="button">NFS-Win (x86)</a><br/>
+<a class="btn" style="width:240px;" href="{{< github-latest-asset `billziss-gh/nfs-win` `.msi` >}}" role="button">NFS-Win (x86)</a><br/>
 <a class="text-small" href="https://github.com/billziss-gh/nfs-win">Repository</a>
 </center>
 
