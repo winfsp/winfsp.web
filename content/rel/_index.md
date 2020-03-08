@@ -22,7 +22,7 @@ WinFsp is released in the form of an MSI installer that includes a signed driver
 
 ## Quick Start Guide
 
-{{% media-object src="install.png" float="left" col=5 %}}
+{{% media-object src="install.png" float="right" col=6 %}}
 
 - Download and run the WinFsp installer.
 - In the installer select the option to install the developer files. These include the MEMFS sample file system, but also header and library files that let you develop your own user-mode file system.
@@ -32,7 +32,7 @@ WinFsp is released in the form of an MSI installer that includes a signed driver
 
 ## Launch WinFsp from the Windows Explorer
 
-{{% media-object src="explorer.png" float="right" col=5 %}}
+{{% media-object src="explorer.png" float="left" col=6 %}}
 
 - Open Windows Explorer
 - Select "This PC". Right-click and select "Map network drive..."
@@ -45,7 +45,7 @@ WinFsp is released in the form of an MSI installer that includes a signed driver
 
 ## Launch WinFsp from the Command Prompt
 
-{{% media-object src="command.png" float="left" col=5 %}}
+{{% media-object src="command.png" float="right" col=6 %}}
 
 - Start a non-admin Command Prompt.
 - Navigate to the folder where you installed WinFsp: `cd C:\Program Files (x86)\WinFsp\bin`
@@ -57,7 +57,7 @@ WinFsp is released in the form of an MSI installer that includes a signed driver
 
 ## For Cygwin users
 
-{{% media-object src="cygwin.png" float="right" col=5 %}}
+{{% media-object src="cygwin.png" float="left" col=6 %}}
 
 The installer includes a FUSE package that can be installed on 32-bit or 64-bit Cygwin. This allows software such as SSHFS and FUSEPY to be built and run on Cygwin with minimal changes.
 

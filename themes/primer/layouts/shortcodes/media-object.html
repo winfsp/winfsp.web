@@ -1,11 +1,17 @@
 {{- $src := .Get "src" -}}
 {{- $dir := .Get "float" -}}
 {{- $col := .Get "col" -}}
+{{- $padimg := "pr-2" -}}
+{{- $padtxt := "pl-2" -}}
+{{- if eq $dir "right" -}}
+  {{- $padimg = "pl-2" -}}
+  {{- $padtxt = "pr-2" -}}
+{{- end -}}
 <div class="clearfix">
-  <div class="float-{{ $dir }} col-{{ $col }}">
+  <div class="float-{{ $dir }} col-{{ $col }} {{ $padimg }}">
     <img src="{{ $src }}" />
   </div>
-  <div class="float-{{ $dir }} col-{{ sub 12 $col }} px-3">
+  <div class="float-{{ $dir }} col-{{ sub 12 $col }} {{ $padtxt }}">
     {{ .Inner }}
   </div>
 </div>
