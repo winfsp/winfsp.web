@@ -64,8 +64,8 @@ The installer includes a FUSE package that can be installed on 32-bit or 64-bit 
 To install the FUSE package to Cygwin perform the following steps:
 
 ```
-$ cd opt/cygfuse/                       <1>
-$ sh ./install.sh                       <2>
+$ cd opt/cygfuse/       <1>
+$ sh ./install.sh       <2>
 ```
 
 1. From a Cygwin command prompt change to the subdirectory `opt/cygfuse` under the WinFsp installation directory.
@@ -74,8 +74,8 @@ $ sh ./install.sh                       <2>
 To uninstall the FUSE package to Cygwin perform the following steps:
 
 ```
-$ cd opt/cygfuse/                       <1>
-$ sh ./uninstall.sh                     <2>
+$ cd opt/cygfuse/       <1>
+$ sh ./uninstall.sh     <2>
 ```
 
 1. From a Cygwin command prompt change to the subdirectory `opt/cygfuse` under the WinFsp installation directory.
