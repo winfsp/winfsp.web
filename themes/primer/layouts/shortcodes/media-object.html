@@ -1,0 +1,11 @@
+{{- $src := .Get "src" -}}
+{{- $dir := .Get "float" -}}
+{{- $col := .Get "col" -}}
+<div class="clearfix">
+  <div class="float-{{ $dir }} col-{{ $col }}">
+    <img src="{{ $src }}" />
+  </div>
+  <div class="float-{{ $dir }} col-{{ sub 12 $col }} px-3">
+    {{ .Inner }}
+  </div>
+</div>
