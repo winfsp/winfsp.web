@@ -1,13 +1,14 @@
-baseURL: https://winfsp.github.io
 title: WinFsp
 copyright: © 2020 Bill Zissimopoulos
+baseURL: https://winfsp.github.io
 
 theme: primer
 
 disableHugoGeneratorInject: true
-disablePathToLower: true
 disableKinds: ["taxonomy", "taxonomyTerm", "RSS", "404"]
+disablePathToLower: true
 pygmentsUseClasses: true
+relativeURLs: true
 
 markup:
   goldmark:
@@ -15,8 +16,8 @@ markup:
       unsafe: true
 
 params:
-  logo: logo.png
   description: Windows File System Proxy - FUSE for Windows
+  logo: logo.png
 
 menu:
   main:

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -e
+
+[ $# -eq 2 ] || { echo "usage: newalias alias target"; exit 2; }
+
+alias="$1"
+target="$2"
+
+cd $(dirname "$0")/..
+path=$(python -c "import os.path; print os.path.relpath('$target', '$alias')")
+
+mkdir -p "content/$alias"
+cat <<EOT >"content/$alias/index.html"
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>Redirect to $path/</title>
+    <meta http-equiv="refresh" content="0; url=$path/" />
+  </head>
+</html>
+EOT
