@@ -18,38 +18,30 @@ WinFsp is available under the [GPLv3](https://github.com/billziss-gh/winfsp/blob
 
 WinFsp includes built-in support for developing file systems on Windows in the C, C++ and .NET languages. The following open source projects provide support for additional languages via WinFsp. Please note that these are external projects and not directly related to WinFsp.
 
-{{% d-table %}}
-{{% d-table-cell col=6 %}}
-{{% media-object src="go.png" float="left" col=3 %}}
+{{% grid columns="6 6" spacing="2" %}}
+
+{{% grid-cell %}}{{% media-object src="go.png" float="left" col=3 %}}
 [billziss-gh/cgofuse](https://github.com/billziss-gh/cgofuse)
 
 Cross-platform FUSE library for Go - Works on Windows, macOS, Linux, FreeBSD, NetBSD, OpenBSD
-{{% /media-object %}}
-{{% /d-table-cell %}}
+{{% /media-object %}}{{% /grid-cell %}}
 
-{{% d-table-cell col=6 %}}
-{{% media-object src="java.png" float="left" col=3 %}}
+{{% grid-cell %}}{{% media-object src="java.png" float="left" col=3 %}}
 [SerCeMan/jnr-fuse](https://github.com/SerCeMan/jnr-fuse)
 
 FUSE implementation in Java using Java Native Runtime (JNR)
-{{% /media-object %}}
-{{% /d-table-cell %}}
-{{% /d-table %}}
+{{% /media-object %}}{{% /grid-cell %}}
 
-{{% d-table %}}
-{{% d-table-cell col=6 %}}
-{{% media-object src="python.png" float="left" col=3 %}}
+{{% grid-cell %}}{{% media-object src="python.png" float="left" col=3 %}}
 [Scille/winfspy](https://github.com/Scille/winfspy)
 
 WinFSP binding for Python
-{{% /media-object %}}
-{{% /d-table-cell %}}
+{{% /media-object %}}{{% /grid-cell %}}
 
-{{% d-table-cell col=6 %}}
-{{% media-object src="python.png" float="left" col=3 %}}
+{{% grid-cell %}}{{% media-object src="python.png" float="left" col=3 %}}
 [billziss-gh/fusepy](https://github.com/billziss-gh/fusepy)
 
 Simple ctypes bindings for FUSE - Also support Windows
-{{% /media-object %}}
-{{% /d-table-cell %}}
-{{% /d-table %}}
+{{% /media-object %}}{{% /grid-cell %}}
+
+{{% /grid %}}
