@@ -2,6 +2,7 @@
 {{- $dir := .Get "float" -}}
 {{- $col := .Get "col" -}}
 {{- $pad := .Get "pad" | default "2" -}}
+{{- $imgcls := .Get "imgcls" -}}
 {{- $padimg := "pr-" -}}
 {{- $padtxt := "pl-" -}}
 {{- if eq $dir "right" -}}
@@ -10,7 +11,7 @@
 {{- end -}}
 <div class="clearfix">
   <div class="float-{{ $dir }} col-{{ $col }} {{ $padimg }}{{ $pad }}">
-    <img src="{{ $src }}" />
+    <img src="{{ $src }}" class="{{ $imgcls }}" />
   </div>
   <div class="float-{{ $dir }} col-{{ sub 12 $col }} {{ $padtxt }}{{ $pad }}">
     {{ .Inner }}

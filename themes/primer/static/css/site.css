@@ -3,6 +3,7 @@
 @import url(syntax-dark.css) (prefers-color-scheme: dark);
 
 @media (prefers-color-scheme: dark) {
+  .no-filter    { filter: none; }
   .auto-invert  { filter: invert(75%); }
   img           { filter: brightness(75%); }
 }
