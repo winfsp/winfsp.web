@@ -20,25 +20,25 @@ WinFsp includes built-in support for developing file systems on Windows in the C
 
 {{% grid columns="6 6" spacing="2" %}}
 
-{{% grid-cell %}}{{% media-object src="go.png" float="left" col=3 %}}
+{{% grid-cell %}}{{% media-object src="go.png" float="left" col=3 pad=1 %}}
 [billziss-gh/cgofuse](https://github.com/billziss-gh/cgofuse)
 
 Cross-platform FUSE library for Go - Works on Windows, macOS, Linux, FreeBSD, NetBSD, OpenBSD
 {{% /media-object %}}{{% /grid-cell %}}
 
-{{% grid-cell %}}{{% media-object src="java.png" float="left" col=3 %}}
+{{% grid-cell %}}{{% media-object src="java.png" float="left" col=3 pad=1 %}}
 [SerCeMan/jnr-fuse](https://github.com/SerCeMan/jnr-fuse)
 
 FUSE implementation in Java using Java Native Runtime (JNR)
 {{% /media-object %}}{{% /grid-cell %}}
 
-{{% grid-cell %}}{{% media-object src="python.png" float="left" col=3 %}}
+{{% grid-cell %}}{{% media-object src="python.png" float="left" col=3 pad=1 %}}
 [Scille/winfspy](https://github.com/Scille/winfspy)
 
 WinFSP binding for Python
 {{% /media-object %}}{{% /grid-cell %}}
 
-{{% grid-cell %}}{{% media-object src="python.png" float="left" col=3 %}}
+{{% grid-cell %}}{{% media-object src="python.png" float="left" col=3 pad=1 %}}
 [billziss-gh/fusepy](https://github.com/billziss-gh/fusepy)
 
 Simple ctypes bindings for FUSE - Also support Windows
