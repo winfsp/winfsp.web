@@ -16,7 +16,7 @@ WinFsp is available under the [GPLv3](https://github.com/billziss-gh/winfsp/blob
 
 ### Language Support
 
-The following open source projects use WinFsp to provide support for user mode file systems on Windows. Please note that these are external projects and not related to WinFsp.
+WinFsp includes built-in support for developing file systems on Windows in the C, C++ and .NET languages. The following open source projects provide support for additional languages via WinFsp. Please note that these are external projects and not directly related to WinFsp.
 
 {{% d-table %}}
 {{% d-table-cell col=6 %}}
