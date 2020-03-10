@@ -29,7 +29,7 @@ Typically any information or storage may be organized and presented as a file sy
 {{% grid-cell %}}
 <img src="trust.svg" width="128px" height="128px" class="no-filter" />
 
-**Trust**
+**Trusted**
 
 WinFsp is trusted by some of the largest software companies, cloud services companies and major financial institutions in the world.
 {{% /grid-cell %}}
@@ -37,7 +37,7 @@ WinFsp is trusted by some of the largest software companies, cloud services comp
 {{% grid-cell %}}
 <img src="maturity.svg" width="128px" height="128px" class="no-filter" />
 
-**Maturity**
+**Mature**
 
 WinFsp is mature software that is in use in millions of installations. It has been deployed at all scales from government to enterprise to individual.
 {{% /grid-cell %}}
@@ -45,7 +45,7 @@ WinFsp is mature software that is in use in millions of installations. It has be
 {{% grid-cell %}}
 <img src="stability.svg" width="128px" height="128px" class="no-filter" />
 
-**Stability**
+**Stable**
 
 WinFsp is stable software. There are no known crashes and it does not suffer from resource leaks or similar problems.
 {{% /grid-cell %}}
@@ -53,7 +53,7 @@ WinFsp is stable software. There are no known crashes and it does not suffer fro
 {{% grid-cell %}}
 <img src="correctness.svg" width="128px" height="128px" class="no-filter" />
 
-**Correctness**
+**Semantically correct**
 
 WinFsp strives for correct file system semantics and compatibility with the NTFS file system.
 {{% /grid-cell %}}
@@ -61,7 +61,7 @@ WinFsp strives for correct file system semantics and compatibility with the NTFS
 {{% grid-cell %}}
 <img src="performance.svg" width="128px" height="128px" class="no-filter" />
 
-**Performance**
+**Fast**
 
 WinFsp outperforms its competition often by an order of magnitude. In many scenarios it performs as well as NTFS.
 {{% /grid-cell %}}
@@ -69,7 +69,7 @@ WinFsp outperforms its competition often by an order of magnitude. In many scena
 {{% grid-cell %}}
 <img src="easeofuse.svg" width="128px" height="128px" class="no-filter" />
 
-**Ease of use**
+**Easy to use**
 
 WinFsp has an easy to use but comprehensive API. It provides native Windows, FUSE and Cygwin API's for C, C++ and .NET out of the box.
 {{% /grid-cell %}}
