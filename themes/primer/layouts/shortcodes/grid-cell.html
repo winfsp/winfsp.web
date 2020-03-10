@@ -1,5 +1,6 @@
 {{- $columns := (split (.Parent.Get "columns") " ") -}}
 {{- $spacing := .Parent.Get "spacing" -}}
+{{- $boxclass := .Parent.Get "boxclass" -}}
 
 {{- .Parent.Scratch.Add "index" 1 -}}
 {{- $newindex := .Parent.Scratch.Get "index" -}}
@@ -11,29 +12,8 @@
 
 {{- $col := index $columns $colidx -}}
 
-{{- $pr := 0 -}}
-{{- $pl := 0 -}}
-{{- if gt $colidx 0 -}}
-  {{- $pl = $spacing -}}
-{{- end -}}
-{{- if lt $colidx $newcolidx -}}
-  {{- $pr = $spacing -}}
-{{- end -}}
-
-{{- $pb := $spacing -}}
-{{- $pt := 0 -}}
-{{- if gt $rowidx 0 -}}
-  {{- $pt = $spacing -}}
-{{- end -}}
-
-{{- if eq $colidx 0 }}
-<div class="d-table">
-{{ end -}}
-
-<div class="d-table-cell col-{{ $col }} v-align-top pl-{{ $pl }} pr-{{ $pr }} pt-{{ $pt }} pb-{{ $pb }}">
-  {{ .Inner }}
+<div class="col-12 col-md-{{ $col }} d-flex flex-content-stretch p-{{ $spacing }}">
+  <div class="{{ $boxclass }} width-full p-{{ $spacing }}">
+    {{ .Inner }}
+  </div>
 </div>
-
-{{ if ge $colidx $newcolidx -}}
-</div>
-{{- end }}
