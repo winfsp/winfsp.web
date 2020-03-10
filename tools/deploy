@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -e
+
+usage()
+{
+    echo "usage: deploy http://www.secfs.net/winfsp DESTDIR"
+    exit 2
+}
+
+origbaseurl="https://winfsp.github.io"
+baseurl="$1"
+destdir="$2"
+[ "$1" == "http://www.secfs.net/winfsp" ] || usage
+[ "$2" != "" ] || usage
+
+rm -rf "$destdir"
+mkdir -p "$destdir"
+
+cp -R $(dirname "$0")/../public/* "$destdir"
+find "$destdir" -type f \( -name "*.html" -o -name "sitemap.xml" \) -print | while read file; do
+    echo "$file"
+    sed "s@${origbaseurl}@${baseurl}@g" "$file" > "$file.new"
+    mv "$file.new" "$file"
+done
