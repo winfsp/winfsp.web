@@ -36,7 +36,9 @@
       <div id="side" class="col-md-3 float-left d-none d-md-block">
         <div class="p-3" style="min-height:100vh">
           {{ if fileExists .Site.Params.Logo -}}
-            <img src="{{ .Site.Params.Logo | relURL }}" class="mb-3 width-fit auto-invert" />
+            <div class="mb-3 text-center">
+              <img src="{{ .Site.Params.Logo | relURL }}" class="auto-invert" style="width:75%;" />
+            </div>
           {{- end }}
           <h1 class="f1-light text-uppercase text-center mb-3">{{ .Site.Title }}</h1>
           <nav class="SideNav border">
