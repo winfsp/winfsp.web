@@ -4,9 +4,12 @@ title: WinFsp · Windows File System Proxy
 
 WinFsp is system software that provides runtime and development support for custom file systems on Windows computers. In this sense it is similar to FUSE (Filesystem in Userspace), which provides the same functionality on UNIX-like computers.
 
-A file system is the method that a computer uses to organize, store and retrieve files. On Windows the default file system is NTFS and files are typically stored on a "drive". WinFsp allows the creation of custom file systems that go beyond the standard file systems that ship with a Windows computer.
-
 Typically any information or storage may be organized and presented as a file system via WinFsp, with the benefit being that the information can be accessed via the standand Windows file API's by any Windows application.
+
+<center class="my-5">
+<a class="btn btn-primary mb-3" style="width:240px;" href="/rel/" role="button">WinFsp Downloads</a><br/>
+<a class="btn" style="width:240px;" href="/doc/" role="button">WinFsp Documentation</a>
+</center>
 
 <!-- Icon attribution:
   - ©2015 - 2020 IcoFont (https://icofont.com) - CC BY 4.0
