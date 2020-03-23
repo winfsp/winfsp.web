@@ -7,3 +7,7 @@
   .auto-invert  { filter: invert(75%); }
   img           { filter: brightness(75%); }
 }
+
+summary {
+  outline-style: none;
+}

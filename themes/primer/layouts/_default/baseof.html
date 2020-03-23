@@ -64,7 +64,7 @@
 
       <div id="main" class="col-12 col-md-9 float-left">
         <div class="p-3 markdown-body" style="min-height:100vh">
-          <h1>{{ .Title }}</h1>
+          {{ if not .Params.no_heading -}}<h1>{{ .Title }}</h1>{{- end }}
           {{- block "main" . }}{{ end -}}
         </div>
       </div>

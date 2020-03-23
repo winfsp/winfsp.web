@@ -12,12 +12,17 @@ copy_content()
     local dst="$2"
     local cmd="$3"
 
+    local end="---"
+    if [[ $nam == "WinFsp-API-"* ]]; then
+        end='no_heading: true
+---'
+    fi
     tit="${tit/WinFsp API /WinFsp API: }"
 
     cat <<EOT | cat - "$src" | eval "$3" > "$dst"/"$bnm"
 ---
 title: '$tit'
----
+$end
 EOT
 
     if [ -d "$dir" ]; then
@@ -29,6 +34,12 @@ copy_asciidoc()
 {
     local nl=\\$'\n'
     copy_content "$1" "$2" 'sed -e "s/$nam\///g" -e "1,/^= .*$/s/^\\(= .*\\)$/\\1$nl:source-highlighter: pygments/"'
+}
+
+copy_markdown()
+{
+    local nl=\\$'\n'
+    copy_content "$1" "$2" 'cat'
 }
 
 cd $(dirname "$0")/..
@@ -43,5 +54,9 @@ title: 'Documentation'
 EOT
 
 for f in ext/winfsp/doc/*.asciidoc; do
+    copy_asciidoc "$f" content/doc
+done
+
+for f in ext/winfsp/doc/*.h.md; do
     copy_asciidoc "$f" content/doc
 done
