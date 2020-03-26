@@ -1,0 +1,10 @@
+<div class="text-center py-5">
+  {{ $looped := false }}
+  {{ range .Site.Menus.main -}}
+    {{- if $looped }}&middot;{{ end -}}
+    <a class="UnderlineNav-item f3-light pb-0 mx-2" href="{{ .URL }}">
+      {{- .Name -}}
+    </a>
+    {{ $looped = true }}
+  {{- end }}
+</div>

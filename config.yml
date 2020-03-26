@@ -21,7 +21,7 @@ params:
 
 menu:
   main:
-  - name: Main
+  - name: Home
     url: /
     weight: 10
   - name: Download

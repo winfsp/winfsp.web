@@ -12,63 +12,81 @@
     <link rel="stylesheet" href="{{ `css/site.css` | relURL }}" />
   </head>
   <body class="bg-white text-gray-dark">
+
+    {{ if .Params.banner -}}
+      <div id="banner" class="p-8 f3-light text-center" {{ printf "style=%q" .Params.banner | safeHTMLAttr }}>
+        <div class="container-md">
+            {{ if not .Params.no_heading -}}<h1 class="f00-light mb-4">{{ .Title }}</h1>{{- end }}
+            {{ .Params.banner_text | markdownify }}
+        </div>
+      </div>
+    {{- end }}
+
     <div id="container" class="container-lg clearfix">
+      
+      {{- $mainClass := "col-12 col-md-9 float-left" -}}
+      {{ if .Params.no_menu -}}
+        {{- $mainClass = "" -}}
+      {{- else -}}
 
-      <div id="top" class="d-block d-md-none">
-        <div class="clearfix bg-gray-light border-bottom p-3">
-          {{ if fileExists .Site.Params.Logo -}}
-            <img src="{{ .Site.Params.Logo | relURL }}" class="float-left mr-3 auto-invert" style="height:32px;" />
-          {{- end }}
-          <h1 class="f2-light text-uppercase float-left">{{ .Site.Title }}</h1>
-          <details class="dropdown details-reset details-overlay float-right">
-            <summary class="btn-octicon" aria-haspopup="true">
-              <img src="{{ `svg/three-bars.svg` | relURL }}" class="auto-invert" />
-            </summary>
-            <ul class="dropdown-menu dropdown-menu-w">
-              {{ range .Site.Menus.main -}}
-                <li><a class="dropdown-item" href="{{ .URL }}">{{- .Name -}}</a></li>
-              {{- end }}
-            </ul>
-          </details>
-        </div>
-      </div>
-
-      <div id="side" class="col-md-3 float-left d-none d-md-block">
-        <div class="p-3" style="min-height:100vh">
-          {{ if fileExists .Site.Params.Logo -}}
-            <div class="mb-3 text-center">
-              <img src="{{ .Site.Params.Logo | relURL }}" class="auto-invert" style="width:75%;" />
-            </div>
-          {{- end }}
-          <h1 class="f1-light text-uppercase text-center mb-3">{{ .Site.Title }}</h1>
-          <nav class="SideNav border">
-            {{- $RelPermalink := .RelPermalink -}}
-            {{ range .Site.Menus.main -}}
-              {{- $current := or (eq $RelPermalink .URL) (and (ne .URL "/") (hasPrefix $RelPermalink .URL)) -}}
-              <a class="SideNav-item" href="{{ .URL }}" {{ if $current }}aria-current="page"{{ end }}>
-                {{- .Name -}}
-              </a>
-              {{ if and $current (eq .Post "pages") -}}
-                <nav class="SideNav py-2 pl-3">
-                  {{ range ($.GetPage .URL).Pages -}}
-                    <a class="SideNav-subItem" href="{{ .RelPermalink }}" {{ if eq . $ }}aria-current="page"{{ end }}>
-                      {{- .Name -}}
-                    </a>
-                  {{- end }}
-                </nav>
-              {{- end }}
+        <div id="top" class="d-block d-md-none">
+          <div class="clearfix bg-gray-light border-bottom p-3">
+            {{ if fileExists .Site.Params.Logo -}}
+              <img src="{{ .Site.Params.Logo | relURL }}" class="float-left mr-3 auto-invert" style="height:32px;" />
             {{- end }}
-          </nav>
+            <h1 class="f2-light text-uppercase float-left">{{ .Site.Title }}</h1>
+            <details class="dropdown details-reset details-overlay float-right">
+              <summary class="btn-octicon" aria-haspopup="true">
+                <img src="{{ `svg/three-bars.svg` | relURL }}" class="auto-invert" />
+              </summary>
+              <ul class="dropdown-menu dropdown-menu-w">
+                {{ range .Site.Menus.main -}}
+                  <li><a class="dropdown-item" href="{{ .URL }}">{{- .Name -}}</a></li>
+                {{- end }}
+              </ul>
+            </details>
+          </div>
         </div>
-      </div>
 
-      <div id="main" class="col-12 col-md-9 float-left">
+        <div id="side" class="col-md-3 float-left d-none d-md-block">
+          <div class="p-3" style="min-height:100vh">
+            {{ if fileExists .Site.Params.Logo -}}
+              <div class="mb-3 text-center">
+                <img src="{{ .Site.Params.Logo | relURL }}" class="auto-invert" style="width:75%;" />
+              </div>
+            {{- end }}
+            <h1 class="f1-light text-uppercase text-center mb-3">{{ .Site.Title }}</h1>
+            <nav class="SideNav border">
+              {{- $RelPermalink := .RelPermalink -}}
+              {{ range .Site.Menus.main -}}
+                {{- $current := or (eq $RelPermalink .URL) (and (ne .URL "/") (hasPrefix $RelPermalink .URL)) -}}
+                <a class="SideNav-item" href="{{ .URL }}" {{ if $current }}aria-current="page"{{ end }}>
+                  {{- .Name -}}
+                </a>
+                {{ if and $current (eq .Post "pages") -}}
+                  <nav class="SideNav py-2 pl-3">
+                    {{ range ($.GetPage .URL).Pages -}}
+                      <a class="SideNav-subItem" href="{{ .RelPermalink }}" {{ if eq . $ }}aria-current="page"{{ end }}>
+                        {{- .Name -}}
+                      </a>
+                    {{- end }}
+                  </nav>
+                {{- end }}
+              {{- end }}
+            </nav>
+          </div>
+        </div>
+
+      {{- end }}
+
+      <div id="main" class="{{ $mainClass }}">
         <div class="p-3 markdown-body" style="min-height:100vh">
-          {{ if not .Params.no_heading -}}<h1>{{ .Title }}</h1>{{- end }}
+          {{ if and (not .Params.no_heading) (not .Params.banner) -}}<h1>{{ .Title }}</h1>{{- end }}
           {{- block "main" . }}{{ end -}}
         </div>
       </div>
-
+  
     </div>
+
   </body>
 </html>
