@@ -14,9 +14,9 @@
   <body class="bg-white text-gray-dark">
 
     {{ if .Params.banner -}}
-      <div id="banner" class="p-8 f3-light text-center" {{ printf "style=%q" .Params.banner | safeHTMLAttr }}>
+      <div id="banner" class="p-8 lead-mktg text-center" {{ printf "style=%q" .Params.banner | safeHTMLAttr }}>
         <div class="container-md">
-            {{ if not .Params.no_heading -}}<h1 class="f00-light mb-4">{{ .Title }}</h1>{{- end }}
+            {{ if not .Params.no_heading -}}<h1 class="h000-mktg mb-4">{{ .Title }}</h1>{{- end }}
             {{ .Params.banner_text | markdownify }}
         </div>
       </div>
