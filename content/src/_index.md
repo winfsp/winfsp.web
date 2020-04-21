@@ -39,6 +39,12 @@ WinFSP binding for Python
 {{% /media-object %}}{{% /grid-cell %}}
 
 {{% grid-cell %}}{{% media-object src="python.png" float="left" col=2 pad=1 %}}
+[pleiszenburg/refuse](https://github.com/pleiszenburg/refuse)
+
+Simple cross-plattform ctypes bindings for libfuse / FUSE for macOS / WinFsp
+{{% /media-object %}}{{% /grid-cell %}}
+
+{{% grid-cell %}}{{% media-object src="python.png" float="left" col=2 pad=1 %}}
 [billziss-gh/fusepy](https://github.com/billziss-gh/fusepy)
 
 Simple ctypes bindings for FUSE - Also support Windows
