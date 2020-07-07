@@ -47,7 +47,7 @@ cd $(dirname "$0")/..
 rm -rf content/doc
 mkdir -p content/doc
 
-cat <<EOT | cat - ext/winfsp/doc/Home.md | sed -e '/^# .*$/d' -e '/^\[\[[^]]*.png\]\]$/d' -e 's/\[\[\([^]]*\)\|\([^]]*\)\]\]/[\1](\2)/g' > content/doc/_index.md
+cat <<EOT | cat - ext/winfsp/doc/Home.md | sed -e '/^# .*$/d' -e '/^\[\[[^]]*.png\]\]$/d' -e 's/\[\[\([^|]*\)|\([^]]*\)]]/[\1](\2)/g' > content/doc/_index.md
 ---
 title: 'Documentation'
 ---
